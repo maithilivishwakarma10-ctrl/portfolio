@@ -115,6 +115,150 @@ footer{padding:25px 0 45px;border-top:1px solid var(--line);color:var(--muted);f
  .journey-shell{padding:27px}.journey-shell h2{font-size:40px}.contact-box{padding:34px 24px}.contact h2{font-size:47px}
  .cart-float{left:-4px;bottom:20px}
 }
+
+/* DARK GLOSSY EMAIL-TEMPLATE THEME */
+:root{--navy:#07151d;--blue:#75d8ee;--blue-strong:#75d8ee;--blue-pale:#102b35;--cream:#07151d;--white:#f7fbfc;--yellow:#f2d77c;--text:#f7fbfc;--muted:#9bb1b9;--line:rgba(185,239,248,.15);--shadow:0 25px 80px rgba(0,0,0,.34)}
+html,body{background:#07151d;color:#f7fbfc} body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 80% 0%,rgba(117,216,238,.13),transparent 28%),radial-gradient(circle at 0% 70%,rgba(117,216,238,.07),transparent 25%)}
+nav{background:rgba(7,21,29,.9);border-color:var(--line)} .links{color:#c8dbe0}.logo{color:#f7fbfc}
+.hero{padding:70px 0 48px;background:linear-gradient(135deg,#0b2530,#07151d 65%,#10252d);border-color:var(--line)}
+.hero-grid{position:relative}.hero-grid:before{content:"";position:absolute;inset:-54px -54px auto;height:36px;background:#102a34;border-bottom:1px solid var(--line);border-radius:22px 22px 0 0}
+.hero-grid:after{content:"maithili · portfolio / new message";position:absolute;top:-43px;left:17px;color:#78919a;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+.hero h1{color:#f7fbfc}.hero-copy{color:#9bb1b9}.eyebrow{color:#75d8ee}.highlight:after{background:#f2d77c}.btn{background:#0d2731;border-color:rgba(185,239,248,.35);color:#f7fbfc}.btn.primary{background:#75d8ee;color:#07202a;border-color:#75d8ee}
+.photo-card{background:#091c24;border-color:var(--line);box-shadow:var(--shadow)}.photo-label{color:#9bb1b9}.photo-label strong{color:#f7fbfc}.cart-float{background:#102a34;border-color:rgba(117,216,238,.32);color:#f7fbfc}.cart-top{color:#9bb1b9}
+.kpi{background:rgba(255,255,255,.025);border-color:var(--line)}.kpi strong{color:#b9eff8}.kpi span{color:#9bb1b9}
+.section-head h2,.project h3,.case h2,.journey-shell h2,.contact h2,.edu h3{color:#f7fbfc}.section-head p,.project p,.case p,.case li,.edu p{color:#9bb1b9}
+.project,.company,.toolbox,.edu{background:linear-gradient(145deg,#0d252e,#091b23);border-color:var(--line);box-shadow:0 10px 40px rgba(0,0,0,.12)}.project:hover,.company:hover{border-color:rgba(117,216,238,.48);box-shadow:0 25px 70px rgba(0,0,0,.3)}
+.project:before{background:rgba(117,216,238,.07)}.pill{background:rgba(117,216,238,.11);border:1px solid rgba(117,216,238,.2);color:#b9eff8}.project-link{color:#75d8ee}
+.journey-shell{background:linear-gradient(145deg,#0d2731,#081a22);border-color:var(--line)}.journey-intro,.node span{color:#9bb1b9}.node b{color:#b9eff8}.track{background:rgba(185,239,248,.13)}.track:after{background:#75d8ee;box-shadow:0 0 14px rgba(117,216,238,.8)}.dot{background:#75d8ee;border-color:#091d25}
+.company p,.role,.tag{color:#78949d}.tool{background:rgba(255,255,255,.025);border-color:var(--line);color:#d8e8ec}.tool:hover{border-color:rgba(117,216,238,.5);background:rgba(117,216,238,.06)}.tool img{filter:none;opacity:1}.fallback{color:#75d8ee}
+.case{background:linear-gradient(145deg,#0d2731,#0a1d25);border-color:var(--line)}.case strong{color:#f7fbfc}
+.year{color:#75d8ee}.contact-box{background:linear-gradient(135deg,#8de3f3,#55bcd6);color:#07202a}.contact-box .eyebrow{color:#174956}.contact-links a{background:#08212a;color:#fff}
+footer{border-color:var(--line);color:#718991}
+/* email-style window strip */
+.hero .wrap:before{content:"";display:block;height:38px;margin-bottom:-38px;position:relative;z-index:5;background:#102a34;border:1px solid var(--line);border-bottom:0;border-radius:24px 24px 0 0;opacity:.98}
+.hero .wrap:after{content:"●  ●  ●     MAITHILI / PORTFOLIO";position:absolute;top:8px;margin-left:17px;color:#78919a;font-size:9px;letter-spacing:.12em;z-index:6}
+/* bottom photo */
+.bottom-life{padding-top:55px}.life-card{display:grid;grid-template-columns:.82fr 1.18fr;min-height:410px;background:#0c2029;border:1px solid var(--line);border-radius:28px;overflow:hidden}.life-photo{min-height:410px}.life-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) contrast(1.04)}.life-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 48%,#0c2029 100%)}.life-photo{position:relative}.life-copy{padding:48px 45px;display:flex;flex-direction:column;justify-content:center}.life-copy h2{font-family:"Playfair Display",serif;font-size:48px;line-height:.98;margin:7px 0 17px}.life-copy p{color:#9bb1b9;font-size:14px}.hobby-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.hobby{border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:10px;color:#d5e6ea;background:rgba(255,255,255,.025)}
+@media(max-width:850px){.life-card{grid-template-columns:1fr}.life-photo{height:360px;min-height:360px}.life-photo:after{background:linear-gradient(0deg,#0c2029,transparent 70%)}}
+
+
+/* Skills cards: unified dark theme */
+.toolbox:nth-child(1),
+.toolbox:nth-child(2),
+.toolbox:nth-child(3){
+  background:#0b2029 !important;
+  color:#f7fbfc;
+}
+.toolbox:nth-child(3) h3,
+.toolbox:nth-child(3) .tool{
+  color:#d8e8ec;
+}
+
+
+/* Resume-ordered skills system */
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+.skills-grid .toolbox{
+  min-height:100%;
+  background:linear-gradient(145deg,#0d252e,#091b23) !important;
+}
+.skills-grid .toolbox h3{
+  margin:0 0 17px;
+  font-size:18px;
+  letter-spacing:-.02em;
+}
+.skill-lines{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+}
+.skill-lines span{
+  border:1px solid rgba(185,239,248,.13);
+  background:rgba(255,255,255,.025);
+  color:#d9e8ec;
+  padding:7px 9px;
+  border-radius:999px;
+  font-size:10px;
+  line-height:1.2;
+}
+.tool-list{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+.tool{
+  min-height:72px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  border:1px solid rgba(185,239,248,.12);
+  border-radius:12px;
+  background:rgba(255,255,255,.025);
+  color:#d8e8ec;
+  padding:7px;
+  text-align:center;
+  transition:.25s ease;
+}
+.tool:hover{
+  transform:translateY(-4px);
+  border-color:rgba(117,216,238,.48);
+  background:rgba(117,216,238,.06);
+  box-shadow:0 12px 28px rgba(0,0,0,.2);
+}
+.tool img{
+  width:28px;
+  height:28px;
+  object-fit:contain;
+  display:block;
+}
+.tool b{font-size:8px;line-height:1.2}
+.brand-mark{
+  height:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#75d8ee;
+  font-weight:900;
+  font-size:15px;
+}
+.channel-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+.channel{
+  min-height:78px;
+  border:1px solid rgba(185,239,248,.12);
+  border-radius:12px;
+  background:rgba(255,255,255,.025);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  text-align:center;
+  transition:.25s ease;
+}
+.channel:hover{
+  transform:translateY(-4px);
+  border-color:rgba(117,216,238,.48);
+  background:rgba(117,216,238,.06);
+}
+.channel img{width:28px;height:28px;object-fit:contain}
+.channel strong{color:#75d8ee;font-size:15px;line-height:1}
+.channel b{font-size:8px;color:#d8e8ec;line-height:1.2}
+@media(max-width:900px){
+  .skills-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  .skills-grid{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -183,48 +327,96 @@ footer{padding:25px 0 45px;border-top:1px solid var(--line);color:var(--muted);f
 <article class="company reveal"><div class="num">03</div><h3>Awign</h3><p>Technology • Marketing Automation</p><div class="role">Marketing Automation Associate · Apr 2022 – Mar 2023</div></article>
 </div></div></section>
 
+
 <section id="skills"><div class="wrap">
-<div class="section-head reveal"><h2>Skills & toolkit</h2><p>A practical stack across CRM, lifecycle, automation, analytics, web, creative and AI.</p></div>
-<div class="tools">
-<div class="toolbox reveal"><h3>CRM & Marketing</h3><div class="tool-list">
-<span class="tool"><img src="https://cdn.simpleicons.org/webengage" onerror="this.style.display='none'"><span>WebEngage</span></span>
-<span class="tool"><span class="fallback">◉</span><span>CleverTap</span></span>
-<span class="tool"><img src="https://cdn.simpleicons.org/zoho" onerror="this.style.display='none'"><span>Zoho CRM</span></span>
-<span class="tool"><img src="https://cdn.simpleicons.org/hubspot" onerror="this.style.display='none'"><span>HubSpot</span></span>
-<span class="tool"><img src="https://cdn.simpleicons.org/salesforce" onerror="this.style.display='none'"><span>Salesforce</span></span>
-<span class="tool"><span class="fallback">M</span><span>Marketo</span></span>
-<span class="tool"><span class="fallback">✉</span><span>Email</span></span>
-<span class="tool"><span class="fallback">WA</span><span>WhatsApp</span></span>
-<span class="tool"><span class="fallback">R</span><span>RCS</span></span>
-</div></div>
+<div class="section-head reveal">
+  <h2>Skills & toolkit</h2>
+  <p>My skill stack follows the same structure as my resume — with the channels and paid-campaign capabilities I use across lifecycle and growth work.</p>
+</div>
 
-<div class="toolbox reveal"><h3>Automation</h3><div class="tool-list">
-<span class="tool"><img src="https://cdn.simpleicons.org/zapier" onerror="this.style.display='none'"><span>Zapier</span></span>
-<span class="tool"><img src="https://cdn.simpleicons.org/make" onerror="this.style.display='none'"><span>Make</span></span>
-<span class="tool"><span class="fallback">P</span><span>Pabbly Connect</span></span>
-<span class="tool"><span class="fallback">I</span><span>Integrately</span></span>
-<span class="tool"><span class="fallback">U</span><span>UChat</span></span>
-<span class="tool"><span class="fallback">E</span><span>Engati</span></span>
-<span class="tool"><span class="fallback">A</span><span>AiSensy</span></span>
-<span class="tool"><span class="fallback">⚙</span><span>Deluge</span></span>
-<span class="tool"><span class="fallback">IVR</span><span>IVR</span></span>
-</div></div>
+<div class="skills-grid">
 
-<div class="toolbox reveal"><h3>Analytics, Web & AI</h3><div class="tool-list">
-<span class="tool"><img src="https://cdn.simpleicons.org/tableau" onerror="this.style.display='none'"><span>Tableau</span></span>
-<span class="tool"><img src="https://cdn.simpleicons.org/googleanalytics" onerror="this.style.display='none'"><span>Google Analytics</span></span>
-<span class="tool"><img src="https://cdn.simpleicons.org/googlesearchconsole" onerror="this.style.display='none'"><span>Search Console</span></span>
-<span class="tool"><span class="fallback">S</span><span>SEMrush</span></span>
-<span class="tool"><span class="fallback">SQL</span><span>SQL</span></span>
-<span class="tool"><img src="https://cdn.simpleicons.org/powerbi" onerror="this.style.display='none'"><span>Power BI</span></span>
-<span class="tool"><img src="https://cdn.simpleicons.org/wordpress" onerror="this.style.display='none'"><span>WordPress</span></span>
-<span class="tool"><span class="fallback">C</span><span>Canva</span></span>
-<span class="tool"><span class="fallback">AI</span><span>ChatGPT</span></span>
-<span class="tool"><span class="fallback">AI</span><span>Claude</span></span>
-<span class="tool"><span class="fallback">G</span><span>Gemini AI</span></span>
-<span class="tool"><span class="fallback">N</span><span>NotebookLM</span></span>
-</div></div>
+  <div class="toolbox reveal">
+    <h3>01 · Marketing</h3>
+    <div class="skill-lines">
+      <span>Product Marketing</span><span>Go-to-Market (GTM)</span><span>Automated Journey Orchestration</span>
+      <span>Webinar Marketing</span><span>Demand Generation</span><span>Audience Segmentation</span>
+      <span>Marketing Automation</span><span>A/B Testing</span><span>SEO</span><span>Marketing Analytics</span>
+      <span>Paid Campaigns</span>
+    </div>
+  </div>
+
+  <div class="toolbox reveal">
+    <h3>02 · Marketing Platforms</h3>
+    <div class="tool-list">
+      <span class="tool"><img src="https://cdn.simpleicons.org/webengage" data-fallback="https://www.google.com/s2/favicons?domain=webengage.com&sz=128"><b>WebEngage</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/clevertap" data-fallback="https://www.google.com/s2/favicons?domain=clevertap.com&sz=128"><b>CleverTap</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/zoho" data-fallback="https://www.google.com/s2/favicons?domain=zoho.com&sz=128"><b>Zoho CRM</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/hubspot" data-fallback="https://www.google.com/s2/favicons?domain=hubspot.com&sz=128"><b>HubSpot</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/salesforce" data-fallback="https://www.google.com/s2/favicons?domain=salesforce.com&sz=128"><b>Salesforce</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/marketo" data-fallback="https://www.google.com/s2/favicons?domain=marketo.com&sz=128"><b>Marketo</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/zoom" data-fallback="https://www.google.com/s2/favicons?domain=zoom.us&sz=128"><b>Zoom Webinars</b></span>
+    </div>
+  </div>
+
+  <div class="toolbox reveal">
+    <h3>03 · Multichannel Marketing</h3>
+    <div class="channel-grid">
+      <span class="channel"><strong>✉</strong><b>Email</b></span>
+      <span class="channel"><img src="https://cdn.simpleicons.org/whatsapp" alt=""><b>WhatsApp</b></span>
+      <span class="channel"><strong>SMS</strong><b>SMS</b></span>
+      <span class="channel"><strong>RCS</strong><b>RCS</b></span>
+      <span class="channel"><strong>IVR</strong><b>IVR</b></span>
+      <span class="channel"><strong>◉</strong><b>Push Notifications</b></span>
+    </div>
+  </div>
+
+  <div class="toolbox reveal">
+    <h3>04 · Analytics</h3>
+    <div class="tool-list">
+      <span class="tool"><img src="https://cdn.simpleicons.org/tableau" data-fallback="https://www.google.com/s2/favicons?domain=tableau.com&sz=128"><b>Tableau</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/googlesearchconsole" data-fallback="https://www.google.com/s2/favicons?domain=search.google.com&sz=128"><b>Google Search Console</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/semrush" data-fallback="https://www.google.com/s2/favicons?domain=semrush.com&sz=128"><b>SEMrush</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/googleanalytics" data-fallback="https://www.google.com/s2/favicons?domain=analytics.google.com&sz=128"><b>Google Analytics</b></span>
+      <span class="tool"><span class="brand-mark">SQL</span><b>SQL</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/powerbi" data-fallback="https://www.google.com/s2/favicons?domain=powerbi.microsoft.com&sz=128"><b>Power BI</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/microsoftexcel" data-fallback="https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"><b>Excel</b></span>
+    </div>
+  </div>
+
+  <div class="toolbox reveal">
+    <h3>05 · Automation Tools</h3>
+    <div class="tool-list">
+      <span class="tool"><img src="https://cdn.simpleicons.org/zapier" data-fallback="https://www.google.com/s2/favicons?domain=zapier.com&sz=128"><b>Zapier</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/make" data-fallback="https://www.google.com/s2/favicons?domain=make.com&sz=128"><b>Make</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/pabbly" data-fallback="https://www.google.com/s2/favicons?domain=pabbly.com&sz=128"><b>Pabbly Connect</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/integrately" data-fallback="https://www.google.com/s2/favicons?domain=integrately.com&sz=128"><b>Integrately</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/uchat" data-fallback="https://www.google.com/s2/favicons?domain=uchat.com&sz=128"><b>UChat</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/engati" data-fallback="https://www.google.com/s2/favicons?domain=engati.com&sz=128"><b>Engati</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/aisensy" data-fallback="https://www.google.com/s2/favicons?domain=aisensy.com&sz=128"><b>AiSensy</b></span>
+    </div>
+  </div>
+
+  <div class="toolbox reveal">
+    <h3>06 · CMS & Design</h3>
+    <div class="tool-list">
+      <span class="tool"><img src="https://cdn.simpleicons.org/wordpress" data-fallback="https://www.google.com/s2/favicons?domain=wordpress.org&sz=128"><b>WordPress</b></span>
+      <span class="tool"><span class="brand-mark">&lt;/&gt;</span><b>HTML/CSS</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/canva" data-fallback="https://www.google.com/s2/favicons?domain=canva.com&sz=128"><b>Canva</b></span>
+    </div>
+  </div>
+
+  <div class="toolbox reveal">
+    <h3>07 · AI Tools</h3>
+    <div class="tool-list">
+      <span class="tool"><img src="https://cdn.simpleicons.org/chatgpt" data-fallback="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128"><b>ChatGPT</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/claude" data-fallback="https://www.google.com/s2/favicons?domain=claude.ai&sz=128"><b>Claude</b></span>
+      <span class="tool"><img src="https://cdn.simpleicons.org/googlenotebooklm" data-fallback="https://www.google.com/s2/favicons?domain=notebooklm.google.com&sz=128"><b>Google NotebookLM</b></span>
+    </div>
+  </div>
+
 </div></div></section>
+
 
 <section id="drone-case"><div class="wrap"><div class="case reveal"><div class="eyebrow">B2B Product Marketing</div><h2>Making Complex Products Click</h2><div class="case-grid"><div><p><strong>The challenge:</strong> powerful technology can still be difficult to evaluate when its capabilities aren't translated into the language of the people making business decisions.</p><p><strong>My direction:</strong> position an autonomous drone operations platform around stakeholder-specific business outcomes, making the value easier to understand, communicate and act on.</p></div><div><p><strong>Framework</strong></p><ul><li>Signal discovery</li><li>Critical questions</li><li>Hypothesis</li><li>Recommendation</li><li>Distribution / enablement</li><li>Assumptions</li></ul></div></div></div></div></section>
 
@@ -235,14 +427,7 @@ footer{padding:25px 0 45px;border-top:1px solid var(--line);color:var(--muted);f
 <article class="edu reveal"><div class="year">Aug 2016 – Jul 2019</div><h3>Bachelor of Arts (Hons.)</h3><p>Economics</p><p><strong>Banaras Hindu University</strong></p></article>
 </div></div></section>
 
-<section id="about"><div class="wrap">
-<div class="section-head reveal"><h2>Beyond the dashboard</h2><p>Marketing is part strategy, part curiosity. These are a few things that keep that curiosity alive.</p></div>
-<div class="personal">
-<article class="reveal"><div class="icon">🎨</div><h3>Designing</h3><p>Painting, graphic designing and turning ideas into visual stories.</p></article>
-<article class="reveal"><div class="icon">📸</div><h3>Photography</h3><p>Capturing moments, details and stories through my lens.</p></article>
-<article class="reveal"><div class="icon">🍳</div><h3>Cooking</h3><p>Experimenting with recipes and enjoying the process of making something from scratch.</p></article>
-<article class="reveal"><div class="icon">🎵</div><h3>Finding Good Music</h3><p>Always discovering new sounds and building playlists.</p></article>
-</div></div></section>
+<section id="about" class="bottom-life"><div class="wrap"><div class="life-card reveal"><div class="life-photo"><img src="WhatsApp Image 2026-09-07 at 9.30.18 PM.jpeg" alt="Maithili outdoors"></div><div class="life-copy"><div class="eyebrow">Beyond the dashboard</div><h2>Marketing is my work.<br>Curiosity is the habit.</h2><p>Outside campaigns and customer journeys, I like making things, noticing details and collecting ideas from everyday life.</p><div class="hobby-row"><span class="hobby">🎨 Painting</span><span class="hobby">✦ Graphic Designing</span><span class="hobby">📸 Photography</span><span class="hobby">🍳 Cooking</span><span class="hobby">🎵 Music</span></div></div></div></div></section>
 
 <section id="contact" class="contact"><div class="wrap"><div class="contact-box reveal">
 <div class="eyebrow">Let's connect</div><h2>Have a growth problem?<br>Let's make it a system.</h2>
@@ -259,5 +444,16 @@ const observer=new IntersectionObserver(entries=>{
 },{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 </script>
+
+<script>
+document.querySelectorAll('img[data-fallback]').forEach(img=>{
+  img.addEventListener('error',()=>{
+    if(img.dataset.fallbackUsed) return;
+    img.dataset.fallbackUsed='1';
+    img.src=img.dataset.fallback;
+  });
+});
+</script>
+
 </body>
 </html>
