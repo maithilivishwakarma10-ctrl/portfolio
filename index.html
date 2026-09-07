@@ -122,7 +122,7 @@ html,body{background:#07151d;color:#f7fbfc} body:before{content:"";position:fixe
 nav{background:rgba(7,21,29,.9);border-color:var(--line)} .links{color:#c8dbe0}.logo{color:#f7fbfc}
 .hero{padding:70px 0 48px;background:linear-gradient(135deg,#0b2530,#07151d 65%,#10252d);border-color:var(--line)}
 .hero-grid{position:relative}.hero-grid:before{content:"";position:absolute;inset:-54px -54px auto;height:36px;background:#102a34;border-bottom:1px solid var(--line);border-radius:22px 22px 0 0}
-.hero-grid:after{content:"maithili · portfolio / new message";position:absolute;top:-43px;left:17px;color:#78919a;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+/* .hero-grid:after{content:"maithili · portfolio / new message";position:absolute;top:-43px;left:17px;color:#78919a;font-size:9px;letter-spacing:.12em;text-transform:uppercase} */
 .hero h1{color:#f7fbfc}.hero-copy{color:#9bb1b9}.eyebrow{color:#75d8ee}.highlight:after{background:#f2d77c}.btn{background:#0d2731;border-color:rgba(185,239,248,.35);color:#f7fbfc}.btn.primary{background:#75d8ee;color:#07202a;border-color:#75d8ee}
 .photo-card{background:#091c24;border-color:var(--line);box-shadow:var(--shadow)}.photo-label{color:#9bb1b9}.photo-label strong{color:#f7fbfc}.cart-float{background:#102a34;border-color:rgba(117,216,238,.32);color:#f7fbfc}.cart-top{color:#9bb1b9}
 .kpi{background:rgba(255,255,255,.025);border-color:var(--line)}.kpi strong{color:#b9eff8}.kpi span{color:#9bb1b9}
@@ -134,9 +134,12 @@ nav{background:rgba(7,21,29,.9);border-color:var(--line)} .links{color:#c8dbe0}.
 .case{background:linear-gradient(145deg,#0d2731,#0a1d25);border-color:var(--line)}.case strong{color:#f7fbfc}
 .year{color:#75d8ee}.contact-box{background:linear-gradient(135deg,#8de3f3,#55bcd6);color:#07202a}.contact-box .eyebrow{color:#174956}.contact-links a{background:#08212a;color:#fff}
 footer{border-color:var(--line);color:#718991}
-/* email-style window strip */
-.hero .wrap:before{content:"";display:block;height:38px;margin-bottom:-38px;position:relative;z-index:5;background:#102a34;border:1px solid var(--line);border-bottom:0;border-radius:24px 24px 0 0;opacity:.98}
-.hero .wrap:after{content:"●  ●  ●     MAITHILI / PORTFOLIO";position:absolute;top:8px;margin-left:17px;color:#78919a;font-size:9px;letter-spacing:.12em;z-index:6}
+/* Removed the decorative email-style window strip that was overlapping the hero content */
+.hero .wrap:before,
+.hero .wrap:after{
+  content:none !important;
+  display:none !important;
+}
 /* bottom photo */
 .bottom-life{padding-top:55px}.life-card{display:grid;grid-template-columns:.82fr 1.18fr;min-height:410px;background:#0c2029;border:1px solid var(--line);border-radius:28px;overflow:hidden}.life-photo{min-height:410px}.life-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) contrast(1.04)}.life-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 48%,#0c2029 100%)}.life-photo{position:relative}.life-copy{padding:48px 45px;display:flex;flex-direction:column;justify-content:center}.life-copy h2{font-family:"Playfair Display",serif;font-size:48px;line-height:.98;margin:7px 0 17px}.life-copy p{color:#9bb1b9;font-size:14px}.hobby-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.hobby{border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:10px;color:#d5e6ea;background:rgba(255,255,255,.025)}
 @media(max-width:850px){.life-card{grid-template-columns:1fr}.life-photo{height:360px;min-height:360px}.life-photo:after{background:linear-gradient(0deg,#0c2029,transparent 70%)}}
@@ -265,7 +268,7 @@ footer{border-color:var(--line);color:#718991}
 
 <nav>
 <div class="wrap nav">
-  <div class="logo">MAITHILI.</div>
+  <div class="logo">MAITHILI PORTFOLIO</div>
   <div class="links">
     <a href="#work">Work</a><a href="#journey">Journey</a><a href="#experience">Experience</a>
     <a href="#skills">Skills</a><a href="#education">Education</a><a href="#about">About</a><a href="#contact">Let's Connect</a>
