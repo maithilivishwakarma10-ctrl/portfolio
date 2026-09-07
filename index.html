@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maithili — CRM • Lifecycle • Growth</title>
+<meta name="description" content="Maithili's marketing portfolio — CRM, lifecycle, growth, automation and AI.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--ink:#17352d;--muted:#66756f;--paper:#f5f1e8;--card:#fffdf8;--lime:#d9ef9b;--line:#d8ddd4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:auto;padding:0 28px}
+nav{position:sticky;top:0;z-index:10;background:rgba(245,241,232,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:700;letter-spacing:-.04em}.links{display:flex;gap:24px;font-size:14px}.links a:hover{opacity:.6}
+.hero{padding:105px 0 80px;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:end}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:700;color:#61716a}.hero h1{font-family:"Playfair Display",serif;font-size:clamp(54px,8vw,98px);line-height:.92;letter-spacing:-.055em;margin:18px 0 25px}.hero h1 em{font-style:normal;position:relative}.hero h1 em:after{content:"";position:absolute;height:12px;background:var(--lime);left:0;right:4%;bottom:4px;z-index:-1;transform:rotate(-1deg)}.hero p{max-width:650px;font-size:19px;color:var(--muted)}.btn{display:inline-flex;padding:13px 18px;border:1px solid var(--ink);border-radius:999px;margin-top:12px;font-weight:600;font-size:14px}.btn:hover{background:var(--ink);color:white}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.kpi{background:var(--card);border:1px solid var(--line);padding:22px;border-radius:18px}.kpi strong{font-family:"Playfair Display",serif;font-size:38px;display:block}.kpi span{font-size:12px;color:var(--muted)}
+section{padding:82px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}.section-head h2{font-family:"Playfair Display",serif;font-size:48px;line-height:1;margin:0;letter-spacing:-.04em}.section-head p{max-width:480px;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .25s,box-shadow .25s}.project:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(23,53,45,.08)}.project:nth-child(5){grid-column:1/-1}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#718079}.project h3{font-family:"Playfair Display",serif;font-size:32px;line-height:1.05;margin:12px 0}.project p{color:var(--muted);max-width:650px}.pill{display:inline-block;background:var(--lime);padding:5px 9px;border-radius:999px;font-size:11px;font-weight:700;margin-right:5px}
+.journey{background:var(--ink);color:#fff;border-radius:32px;padding:40px}.journey h2{font-family:"Playfair Display",serif;font-size:52px;line-height:1;margin:0 0 10px}.journey-intro{color:#c5d1cc;max-width:650px}.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:38px}.step{border:1px solid rgba(255,255,255,.2);padding:18px 12px;min-height:130px;border-radius:15px;position:relative}.step b{font-size:12px;display:block;margin-bottom:25px}.step span{font-size:13px;color:#d3ded9}.arrow{display:none}
+.capabilities{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.cap{border-top:1px solid var(--line);padding:20px 5px}.cap h3{margin:0 0 8px}.cap p{margin:0;color:var(--muted);font-size:14px}
+.build{display:grid;grid-template-columns:1fr 1fr;gap:18px}.note{background:#e8f0df;border-radius:22px;padding:30px}.note h3{font-family:"Playfair Display",serif;font-size:31px;margin:0 0 12px}.note p{color:#53645c}
+.personal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.personal article{background:var(--card);border:1px solid var(--line);padding:22px;border-radius:18px}.personal .icon{font-size:28px}.personal h3{margin:10px 0 5px}.personal p{margin:0;color:var(--muted);font-size:13px}
+.contact{padding:105px 0}.contact-box{background:var(--lime);border-radius:32px;padding:55px}.contact h2{font-family:"Playfair Display",serif;font-size:64px;line-height:.95;margin:0 0 20px}.contact p{max-width:600px}.contact a{text-decoration:underline;font-weight:700}
+footer{padding:25px 0 45px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:70px}.links{display:none}.projects,.build{grid-template-columns:1fr}.project:nth-child(5){grid-column:auto}.flow{grid-template-columns:repeat(2,1fr)}.capabilities{grid-template-columns:1fr 1fr}.personal{grid-template-columns:1fr 1fr}.contact h2{font-size:48px}.journey h2{font-size:40px}}
+@media(max-width:520px){.wrap{padding:0 18px}.hero h1{font-size:58px}.kpis{grid-template-columns:1fr 1fr}.capabilities,.personal{grid-template-columns:1fr}.journey{padding:25px}.contact-box{padding:32px 24px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><div class="logo">MAITHILI.</div><div class="links"><a href="#work">Work</a><a href="#journey">Journey</a><a href="#capabilities">Capabilities</a><a href="#experiments">Experiments</a><a href="#about">About</a><a href="#contact">Let's Connect</a></div></div></nav>
+
+<header class="wrap hero">
+<div>
+<div class="eyebrow">CRM • Lifecycle • Growth • Marketing Automation • AI</div>
+<h1>I build marketing systems that turn <em>customer behaviour</em> into action.</h1>
+<p>I'm Maithili — a marketer who connects customer journeys, content, CRM and automation to make growth more measurable and more human.</p>
+<a class="btn" href="#work">Explore selected work ↓</a>
+</div>
+<div class="kpis">
+<div class="kpi"><strong>60+</strong><span>recurring campaigns / month</span></div>
+<div class="kpi"><strong>8×</strong><span>webinars supported / month</span></div>
+<div class="kpi"><strong>150–300</strong><span>registrations / webinar</span></div>
+<div class="kpi"><strong>15–30</strong><span>enrollments / webinar</span></div>
+</div>
+</header>
+
+<main>
+<section id="work"><div class="wrap"><div class="section-head"><h2>Selected work</h2><p>A mix of real lifecycle execution, automation builds and strategic/spec work — presented as a marketing playbook rather than a list of tasks.</p></div>
+<div class="projects">
+<article class="project"><div><span class="tag">CRM / Lifecycle • Spec</span><h3>🛒 The Cart Called</h3><p>A five-touch WhatsApp abandoned-cart recovery journey for a science-led skincare brand. The idea: reduce decision friction before reaching for a discount.</p></div><div><span class="pill">WhatsApp</span><span class="pill">Segmentation</span><span class="pill">Lifecycle</span></div></article>
+<article class="project"><div><span class="tag">Lifecycle • Real work</span><h3>🎓 From Webinar → Enrollment</h3><p>A two-day communication journey across Email, RCS, WhatsApp and IVR — moving customers from registration to attendance to enrollment.</p></div><div><span class="pill">Email</span><span class="pill">RCS</span><span class="pill">WhatsApp</span><span class="pill">IVR</span></div></article>
+<article class="project"><div><span class="tag">AI × Automation • Build</span><h3>🤖 From Trend → Content</h3><p>A Make.com + Gemini workflow that turns trend research into structured content ideas, captions, LinkedIn posts, blog ideas, hashtags and reel concepts in Google Sheets.</p></div><div><span class="pill">Make.com</span><span class="pill">Gemini</span><span class="pill">AI</span></div></article>
+<article class="project"><div><span class="tag">Confidential assessment • Company withheld</span><h3>🔍 Making Complex Products Click</h3><p>An anonymized B2B product-marketing assessment focused on a simple insight: the challenge is translation, not capability. Technical value has to become stakeholder-relevant business outcomes.</p></div><div><span class="pill">Research</span><span class="pill">B2B</span><span class="pill">Positioning</span></div></article>
+<article class="project"><div><span class="tag">Selected supporting work</span><h3>⚙️ CRM, Automation & Growth</h3><p>A collection of CRM workflows, lead-generation activity, SEO, A/B testing, analytics and automation work. Includes experience building structured forms, validations, reports and workflows in Zoho Creator as part of broader CRM/automation work.</p></div><div><span class="pill">CRM</span><span class="pill">Automation</span><span class="pill">Analytics</span><span class="pill">Zoho Creator</span></div></article>
+</div></div></section>
+
+<section id="journey"><div class="wrap"><div class="journey"><div class="eyebrow" style="color:#aebdb6">Signature customer journey</div><h2>One customer.<br>Many touchpoints.</h2><p class="journey-intro">Good lifecycle marketing isn't “send more messages.” It's knowing what the customer needs next — and choosing the right channel, timing and message.</p>
+<div class="flow">
+<div class="step"><b>01 — SIGNAL</b><span>Customer registers or shows intent.</span></div>
+<div class="step"><b>02 — EMAIL</b><span>Set context, value and expectations.</span></div>
+<div class="step"><b>03 — WHATSAPP</b><span>Make the next action easy.</span></div>
+<div class="step"><b>04 — RCS</b><span>Use richer reminders and information.</span></div>
+<div class="step"><b>05 — IVR</b><span>Add a human nudge when needed.</span></div>
+<div class="step"><b>06 — CRM</b><span>Capture behaviour and trigger what comes next.</span></div>
+</div></div></div></section>
+
+<section id="capabilities"><div class="wrap"><div class="section-head"><h2>What I do</h2><p>Where strategy meets execution: journeys, messaging, data, automation and experimentation.</p></div>
+<div class="capabilities">
+<div class="cap"><h3>Lifecycle & CRM</h3><p>Customer journeys, segmentation, campaign calendars, retention and multi-channel communication.</p></div>
+<div class="cap"><h3>Marketing Automation</h3><p>Workflow design, triggers, lead routing, reusable systems and operational automation.</p></div>
+<div class="cap"><h3>Content & Messaging</h3><p>Email, WhatsApp, RCS, landing-page and campaign messaging designed around customer intent.</p></div>
+<div class="cap"><h3>Growth & Experimentation</h3><p>A/B testing, funnel thinking, lead generation and iterative campaign optimisation.</p></div>
+<div class="cap"><h3>Analytics</h3><p>Campaign reporting, behavioural signals and performance analysis to guide the next action.</p></div>
+<div class="cap"><h3>AI for Marketing</h3><p>Using AI to accelerate research, ideation and content operations without losing human judgement.</p></div>
+</div></div></section>
+
+<section id="experiments"><div class="wrap"><div class="section-head"><h2>Experiments & building</h2><p>I like turning repetitive marketing work into systems that can be reused, measured and improved.</p></div>
+<div class="build">
+<div class="note"><h3>Trend → Content Engine</h3><p>Make.com orchestrates the workflow; Gemini transforms research into structured content outputs; Google Sheets becomes the working content layer.</p><p><strong>Output:</strong> Instagram captions, LinkedIn posts, blog ideas, hashtags, reel concepts and image prompts.</p></div>
+<div class="note"><h3>How I think</h3><p><strong>Signal → Hypothesis → Journey → Message → Distribution → Measurement.</strong></p><p>The goal isn't automation for its own sake. It's creating a system where the next marketing decision becomes easier.</p></div>
+</div></div></section>
+
+<section id="about"><div class="wrap"><div class="section-head"><h2>Beyond the dashboard</h2><p>Marketing is part strategy, part curiosity. These are a few things that keep that curiosity alive.</p></div>
+<div class="personal">
+<article><div class="icon">🎨</div><h3>Designing</h3><p>Turning ideas into visual stories.</p></article>
+<article><div class="icon">📸</div><h3>Photography</h3><p>Capturing moments and stories through my lens.</p></article>
+<article><div class="icon">🎵</div><h3>Finding Good Music</h3><p>Always discovering new sounds and building playlists.</p></article>
+<article><div class="icon">✈️</div><h3>Exploring</h3><p>Travelling, discovering new places and learning continuously.</p></article>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="wrap"><div class="contact-box"><div class="eyebrow">Let's connect</div><h2>Have a growth problem?<br>Let's make it a system.</h2><p>I'm interested in CRM, lifecycle, growth, marketing automation and AI-enabled marketing roles.</p><p>Replace the email and LinkedIn placeholders below with your live details before publishing.</p><p><a href="mailto:your-email@example.com">your-email@example.com</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></p></div></div></section>
+</main>
+<footer><div class="wrap">© 2026 Maithili · CRM • Lifecycle • Growth • Automation • AI</div></footer>
+</body></html>
