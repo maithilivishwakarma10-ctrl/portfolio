@@ -1,93 +1,263 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Maithili — CRM • Lifecycle • Growth</title>
-<meta name="description" content="Maithili's marketing portfolio — CRM, lifecycle, growth, automation and AI.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maithili Vishwakarma | CRM • Lifecycle • Growth</title>
+<meta name="description" content="Maithili Vishwakarma — CRM, lifecycle marketing, marketing automation, growth and AI.">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
-:root{--ink:#17352d;--muted:#66756f;--paper:#f5f1e8;--card:#fffdf8;--lime:#d9ef9b;--line:#d8ddd4}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:auto;padding:0 28px}
-nav{position:sticky;top:0;z-index:10;background:rgba(245,241,232,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:700;letter-spacing:-.04em}.links{display:flex;gap:24px;font-size:14px}.links a:hover{opacity:.6}
-.hero{padding:105px 0 80px;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:end}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:700;color:#61716a}.hero h1{font-family:"Playfair Display",serif;font-size:clamp(54px,8vw,98px);line-height:.92;letter-spacing:-.055em;margin:18px 0 25px}.hero h1 em{font-style:normal;position:relative}.hero h1 em:after{content:"";position:absolute;height:12px;background:var(--lime);left:0;right:4%;bottom:4px;z-index:-1;transform:rotate(-1deg)}.hero p{max-width:650px;font-size:19px;color:var(--muted)}.btn{display:inline-flex;padding:13px 18px;border:1px solid var(--ink);border-radius:999px;margin-top:12px;font-weight:600;font-size:14px}.btn:hover{background:var(--ink);color:white}
-.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.kpi{background:var(--card);border:1px solid var(--line);padding:22px;border-radius:18px}.kpi strong{font-family:"Playfair Display",serif;font-size:38px;display:block}.kpi span{font-size:12px;color:var(--muted)}
-section{padding:82px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}.section-head h2{font-family:"Playfair Display",serif;font-size:48px;line-height:1;margin:0;letter-spacing:-.04em}.section-head p{max-width:480px;color:var(--muted)}
-.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .25s,box-shadow .25s}.project:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(23,53,45,.08)}.project:nth-child(5){grid-column:1/-1}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#718079}.project h3{font-family:"Playfair Display",serif;font-size:32px;line-height:1.05;margin:12px 0}.project p{color:var(--muted);max-width:650px}.pill{display:inline-block;background:var(--lime);padding:5px 9px;border-radius:999px;font-size:11px;font-weight:700;margin-right:5px}
-.journey{background:var(--ink);color:#fff;border-radius:32px;padding:40px}.journey h2{font-family:"Playfair Display",serif;font-size:52px;line-height:1;margin:0 0 10px}.journey-intro{color:#c5d1cc;max-width:650px}.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:38px}.step{border:1px solid rgba(255,255,255,.2);padding:18px 12px;min-height:130px;border-radius:15px;position:relative}.step b{font-size:12px;display:block;margin-bottom:25px}.step span{font-size:13px;color:#d3ded9}.arrow{display:none}
-.capabilities{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.cap{border-top:1px solid var(--line);padding:20px 5px}.cap h3{margin:0 0 8px}.cap p{margin:0;color:var(--muted);font-size:14px}
-.build{display:grid;grid-template-columns:1fr 1fr;gap:18px}.note{background:#e8f0df;border-radius:22px;padding:30px}.note h3{font-family:"Playfair Display",serif;font-size:31px;margin:0 0 12px}.note p{color:#53645c}
-.personal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.personal article{background:var(--card);border:1px solid var(--line);padding:22px;border-radius:18px}.personal .icon{font-size:28px}.personal h3{margin:10px 0 5px}.personal p{margin:0;color:var(--muted);font-size:13px}
-.contact{padding:105px 0}.contact-box{background:var(--lime);border-radius:32px;padding:55px}.contact h2{font-family:"Playfair Display",serif;font-size:64px;line-height:.95;margin:0 0 20px}.contact p{max-width:600px}.contact a{text-decoration:underline;font-weight:700}
-footer{padding:25px 0 45px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:70px}.links{display:none}.projects,.build{grid-template-columns:1fr}.project:nth-child(5){grid-column:auto}.flow{grid-template-columns:repeat(2,1fr)}.capabilities{grid-template-columns:1fr 1fr}.personal{grid-template-columns:1fr 1fr}.contact h2{font-size:48px}.journey h2{font-size:40px}}
-@media(max-width:520px){.wrap{padding:0 18px}.hero h1{font-size:58px}.kpis{grid-template-columns:1fr 1fr}.capabilities,.personal{grid-template-columns:1fr}.journey{padding:25px}.contact-box{padding:32px 24px}}
+
+:root{
+  --navy:#123b49;
+  --blue:#c7edf6;
+  --blue-strong:#62bdd5;
+  --blue-pale:#edf9fc;
+  --cream:#fbf8f0;
+  --white:#ffffff;
+  --yellow:#f4d77c;
+  --text:#173f4c;
+  --muted:#6b7d83;
+  --line:#d8e4e6;
+  --shadow:0 20px 60px rgba(18,59,73,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font-family:"DM Sans",Arial,sans-serif;line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:auto;padding:0 30px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:none}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(251,248,240,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.05em}
+.links{display:flex;gap:25px;font-size:13px;font-weight:700}
+.links a{position:relative}.links a:after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:2px;background:var(--blue-strong);transition:.25s}.links a:hover:after{right:0}
+
+.hero{position:relative;padding:75px 0 55px;background:linear-gradient(135deg,var(--blue-pale),var(--cream) 63%,#fff5d7);border-bottom:1px solid var(--line);overflow:hidden}
+.hero:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:rgba(199,237,246,.35);right:-180px;top:-220px;filter:blur(4px)}
+.hero-grid{display:grid;grid-template-columns:1.22fr .78fr;gap:55px;align-items:center;position:relative}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:10px;font-weight:800;color:#6d858c}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(53px,7vw,91px);line-height:.93;letter-spacing:-.055em;margin:17px 0 24px}
+.highlight{position:relative;z-index:1}.highlight:after{content:"";position:absolute;left:-3px;right:-2px;bottom:6px;height:12px;background:var(--yellow);z-index:-1;transform:rotate(-1deg)}
+.hero-copy{font-size:18px;color:var(--muted);max-width:670px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}
+.btn{padding:12px 17px;border:1px solid var(--navy);border-radius:999px;font-size:13px;font-weight:800;background:var(--white);transition:.25s}.btn.primary{background:var(--navy);color:#fff}.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(18,59,73,.12)}
+
+.photo-wrap{position:relative;max-width:410px;margin-left:auto}
+.photo-card{background:var(--white);padding:10px;border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);transform:rotate(1.8deg);animation:float 5s ease-in-out infinite}
+.photo-card img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:19px}
+.photo-label{display:flex;justify-content:space-between;padding:12px 7px 5px;font-size:11px;color:var(--muted)}.photo-label strong{color:var(--text)}
+.cart-float{position:absolute;left:-35px;bottom:35px;width:170px;background:var(--white);border:1px solid var(--line);border-radius:17px;padding:12px;box-shadow:var(--shadow);animation:cartFloat 4.2s ease-in-out infinite;z-index:3}
+.cart-top{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800}.cart-row{display:flex;align-items:center;gap:9px;margin-top:7px;font-size:12px;font-weight:800}.cart-icon{font-size:27px;animation:cartWiggle 2.2s ease-in-out infinite}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:34px;position:relative}
+.kpi{background:rgba(255,255,255,.82);border:1px solid var(--line);border-radius:16px;padding:18px}.kpi strong{font-family:"Playfair Display",serif;font-size:32px;display:block}.kpi span{font-size:10px;color:var(--muted)}
+
+section{padding:82px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:30px}
+.section-head h2{font-family:"Playfair Display",serif;font-size:49px;line-height:1;margin:0;letter-spacing:-.045em}
+.section-head p{max-width:500px;color:var(--muted);margin:0}
+
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
+.project{background:var(--white);border:1px solid var(--line);border-radius:23px;padding:27px;min-height:285px;display:flex;flex-direction:column;justify-content:space-between;transition:.3s;position:relative;overflow:hidden}
+.project:before{content:"";position:absolute;width:110px;height:110px;border-radius:50%;background:var(--blue-pale);right:-45px;top:-45px;transition:.4s}.project:hover:before{transform:scale(2.2)}
+.project:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.project>*{position:relative}.project:nth-child(5){grid-column:1/-1}
+.tag{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:#71878e;font-weight:800}
+.project h3{font-family:"Playfair Display",serif;font-size:31px;line-height:1.06;margin:11px 0}
+.project p{color:var(--muted);font-size:14px;max-width:720px}.pill{display:inline-block;background:var(--blue);padding:5px 9px;border-radius:999px;font-size:10px;font-weight:800;margin:3px 4px 0 0}.project-link{text-decoration:underline;font-weight:800;font-size:12px}
+
+.journey-shell{background:var(--navy);color:white;border-radius:32px;padding:42px;position:relative;overflow:hidden}
+.journey-shell:after{content:"";position:absolute;width:450px;height:450px;border-radius:50%;border:1px solid rgba(255,255,255,.08);right:-180px;top:-180px}
+.journey-shell .eyebrow{color:#a9dce9}.journey-shell h2{font-family:"Playfair Display",serif;font-size:52px;line-height:1;margin:8px 0 12px}.journey-intro{color:#c9dce1;max-width:700px}
+.lifecycle{position:relative;margin-top:45px;padding:25px 0 5px}
+.track{position:absolute;left:5%;right:5%;top:53px;height:2px;background:rgba(255,255,255,.2);overflow:hidden}
+.track:after{content:"";position:absolute;left:-20%;width:20%;height:100%;background:var(--blue-strong);animation:travel 4s linear infinite}
+.nodes{display:grid;grid-template-columns:repeat(6,1fr);position:relative;z-index:2}
+.node{text-align:center}.dot{width:18px;height:18px;border:4px solid var(--navy);background:var(--blue-strong);border-radius:50%;margin:auto;box-shadow:0 0 0 4px rgba(98,189,213,.15);animation:pulse 2.4s infinite}.node:nth-child(2) .dot{animation-delay:.35s}.node:nth-child(3) .dot{animation-delay:.7s}.node:nth-child(4) .dot{animation-delay:1.05s}.node:nth-child(5) .dot{animation-delay:1.4s}.node:nth-child(6) .dot{animation-delay:1.75s}.node b{display:block;font-size:10px;color:var(--yellow);margin-top:16px;letter-spacing:.08em}.node span{display:block;font-size:11px;color:#c9dce1;margin:5px auto;max-width:125px}
+
+.experience{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.company{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:25px;transition:.3s}.company:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.company .num{font-family:"Playfair Display",serif;color:var(--blue-strong);font-size:25px}.company h3{margin:10px 0 2px;font-size:21px}.company p{margin:0;color:var(--muted);font-size:13px}.role{margin-top:17px;font-size:11px;font-weight:800}
+
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.toolbox{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:24px}.toolbox:nth-child(2){background:var(--blue-pale)}.toolbox:nth-child(3){background:#fff7df}
+.toolbox h3{margin:0 0 15px}.tool-list{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tool{min-height:66px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.9);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;text-align:center;padding:8px;font-size:9px;font-weight:800;color:var(--text);transition:.25s}.tool:hover{transform:translateY(-3px);border-color:var(--blue-strong)}
+.tool img{width:25px;height:25px;object-fit:contain}.tool .fallback{font-size:19px}
+
+.case{background:linear-gradient(135deg,var(--blue-pale),#fff8df);border:1px solid var(--line);border-radius:30px;padding:38px}.case h2{font-family:"Playfair Display",serif;font-size:44px;line-height:1;margin:7px 0 15px}.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.case p,.case li{color:var(--muted)}.case strong{color:var(--text)}
+
+.education{display:grid;grid-template-columns:1fr 1fr;gap:17px}.edu{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:26px}.year{font-size:10px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:#70858b}.edu h3{font-family:"Playfair Display",serif;font-size:27px;margin:8px 0}.edu p{margin:0;color:var(--muted)}
+
+.personal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.personal article{background:var(--white);border:1px solid var(--line);padding:22px;border-radius:18px;transition:.3s}.personal article:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.personal .icon{font-size:27px}.personal h3{margin:10px 0 5px}.personal p{margin:0;color:var(--muted);font-size:13px}
+
+.contact{padding:90px 0}.contact-box{background:var(--blue);border-radius:32px;padding:52px;position:relative;overflow:hidden}.contact-box:after{content:"✦";position:absolute;right:45px;top:25px;font-size:90px;opacity:.15}.contact h2{font-family:"Playfair Display",serif;font-size:61px;line-height:.95;margin:0 0 18px}.contact p{max-width:700px}.contact-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.contact-links a{background:var(--white);border:1px solid var(--navy);padding:12px 16px;border-radius:999px;font-weight:800;font-size:12px;transition:.25s}.contact-links a:hover{background:var(--navy);color:white}
+
+footer{padding:25px 0 45px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
+
+@keyframes float{0%,100%{transform:rotate(1.8deg) translateY(0)}50%{transform:rotate(1.8deg) translateY(-8px)}}
+@keyframes cartFloat{0%,100%{transform:translate(0,0) rotate(-2deg)}50%{transform:translate(12px,-10px) rotate(2deg)}}
+@keyframes cartWiggle{0%,70%,100%{transform:rotate(0)}78%{transform:rotate(-8deg)}86%{transform:rotate(8deg)}94%{transform:rotate(-3deg)}}
+@keyframes travel{0%{left:-20%}100%{left:100%}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.25);box-shadow:0 0 0 8px rgba(98,189,213,.13)}}
+
+@media(max-width:850px){
+ .hero-grid{grid-template-columns:1fr}.photo-wrap{margin:15px auto 0}.kpis{grid-template-columns:repeat(2,1fr)}
+ .projects,.case-grid,.education{grid-template-columns:1fr}.project:nth-child(5){grid-column:auto}
+ .experience,.tools{grid-template-columns:1fr 1fr}.personal{grid-template-columns:1fr 1fr}
+ .flow,.nodes{grid-template-columns:repeat(3,1fr)}.track{display:none}.node{margin-bottom:25px}
+}
+@media(max-width:540px){
+ .wrap{padding:0 18px}.links{display:none}.hero{padding-top:55px}.hero h1{font-size:57px}
+ .section-head{display:block}.section-head h2{font-size:42px;margin-bottom:15px}
+ .experience,.tools,.personal{grid-template-columns:1fr}.tool-list{grid-template-columns:repeat(3,1fr)}
+ .journey-shell{padding:27px}.journey-shell h2{font-size:40px}.contact-box{padding:34px 24px}.contact h2{font-size:47px}
+ .cart-float{left:-4px;bottom:20px}
+}
 </style>
 </head>
 <body>
-<nav><div class="wrap nav"><div class="logo">MAITHILI.</div><div class="links"><a href="#work">Work</a><a href="#journey">Journey</a><a href="#capabilities">Capabilities</a><a href="#experiments">Experiments</a><a href="#about">About</a><a href="#contact">Let's Connect</a></div></div></nav>
 
-<header class="wrap hero">
-<div>
-<div class="eyebrow">CRM • Lifecycle • Growth • Marketing Automation • AI</div>
-<h1>I build marketing systems that turn <em>customer behaviour</em> into action.</h1>
-<p>I'm Maithili — a marketer who connects customer journeys, content, CRM and automation to make growth more measurable and more human.</p>
-<a class="btn" href="#work">Explore selected work ↓</a>
+<nav>
+<div class="wrap nav">
+  <div class="logo">MAITHILI.</div>
+  <div class="links">
+    <a href="#work">Work</a><a href="#journey">Journey</a><a href="#experience">Experience</a>
+    <a href="#skills">Skills</a><a href="#education">Education</a><a href="#about">About</a><a href="#contact">Let's Connect</a>
+  </div>
 </div>
-<div class="kpis">
-<div class="kpi"><strong>60+</strong><span>recurring campaigns / month</span></div>
-<div class="kpi"><strong>8×</strong><span>webinars supported / month</span></div>
-<div class="kpi"><strong>150–300</strong><span>registrations / webinar</span></div>
-<div class="kpi"><strong>15–30</strong><span>enrollments / webinar</span></div>
+</nav>
+
+<header class="hero">
+<div class="wrap">
+  <div class="hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">CRM • Lifecycle • Growth • Automation • AI</div>
+      <h1>I build marketing systems that turn <span class="highlight">customer behaviour</span> into action.</h1>
+      <p class="hero-copy">CRM & Marketing Automation professional with 3+ years of experience building lifecycle campaigns across Email, WhatsApp, RCS, SMS and IVR — combining customer insight, automation and AI to make marketing more effective.</p>
+      <div class="actions"><a class="btn primary" href="#work">Explore selected work ↓</a><a class="btn" href="mailto:maithili.vishwakarma10@gmail.com">Email me</a></div>
+    </div>
+    <div class="photo-wrap reveal">
+      <div class="photo-card"><img src="/Users/vivek/Downloads/Profile Picture.png" alt="Maithili Vishwakarma"><div class="photo-label"><strong>CRM • Growth • Curious mind</strong><span>Pune, India</span></div></div>
+      <div class="cart-float"><div class="cart-top">A little lifecycle moment</div><div class="cart-row"><span class="cart-icon">🛒</span><span>Cart → Nudge → Conversion</span></div></div>
+    </div>
+  </div>
+  <div class="kpis reveal">
+    <div class="kpi"><strong>60+</strong><span>recurring campaigns / month</span></div>
+    <div class="kpi"><strong>8+</strong><span>webinars / month</span></div>
+    <div class="kpi"><strong>150–300</strong><span>registrations / webinar</span></div>
+    <div class="kpi"><strong>15–30</strong><span>enrollments / webinar</span></div>
+  </div>
 </div>
 </header>
 
 <main>
-<section id="work"><div class="wrap"><div class="section-head"><h2>Selected work</h2><p>A mix of real lifecycle execution, automation builds and strategic/spec work — presented as a marketing playbook rather than a list of tasks.</p></div>
+<section id="work"><div class="wrap">
+<div class="section-head reveal"><h2>Selected work</h2><p>Real lifecycle execution, automation builds and strategic product-marketing work — presented as problems, systems and outcomes.</p></div>
 <div class="projects">
-<article class="project"><div><span class="tag">CRM / Lifecycle • Spec</span><h3>🛒 The Cart Called</h3><p>A five-touch WhatsApp abandoned-cart recovery journey for a science-led skincare brand. The idea: reduce decision friction before reaching for a discount.</p></div><div><span class="pill">WhatsApp</span><span class="pill">Segmentation</span><span class="pill">Lifecycle</span></div></article>
-<article class="project"><div><span class="tag">Lifecycle • Real work</span><h3>🎓 From Webinar → Enrollment</h3><p>A two-day communication journey across Email, RCS, WhatsApp and IVR — moving customers from registration to attendance to enrollment.</p></div><div><span class="pill">Email</span><span class="pill">RCS</span><span class="pill">WhatsApp</span><span class="pill">IVR</span></div></article>
-<article class="project"><div><span class="tag">AI × Automation • Build</span><h3>🤖 From Trend → Content</h3><p>A Make.com + Gemini workflow that turns trend research into structured content ideas, captions, LinkedIn posts, blog ideas, hashtags and reel concepts in Google Sheets.</p></div><div><span class="pill">Make.com</span><span class="pill">Gemini</span><span class="pill">AI</span></div></article>
-<article class="project"><div><span class="tag">Confidential assessment • Company withheld</span><h3>🔍 Making Complex Products Click</h3><p>An anonymized B2B product-marketing assessment focused on a simple insight: the challenge is translation, not capability. Technical value has to become stakeholder-relevant business outcomes.</p></div><div><span class="pill">Research</span><span class="pill">B2B</span><span class="pill">Positioning</span></div></article>
-<article class="project"><div><span class="tag">Selected supporting work</span><h3>⚙️ CRM, Automation & Growth</h3><p>A collection of CRM workflows, lead-generation activity, SEO, A/B testing, analytics and automation work. Includes experience building structured forms, validations, reports and workflows in Zoho Creator as part of broader CRM/automation work.</p></div><div><span class="pill">CRM</span><span class="pill">Automation</span><span class="pill">Analytics</span><span class="pill">Zoho Creator</span></div></article>
+<article class="project reveal"><div><span class="tag">CRM / Lifecycle • Spec</span><h3>🛒 The Cart Called</h3><p>A five-touch WhatsApp abandoned-cart recovery journey for a science-led skincare brand. The strategy focuses on reducing decision friction before relying on discounts.</p></div><div><span class="pill">WhatsApp</span><span class="pill">Segmentation</span><span class="pill">Lifecycle</span></div></article>
+<article class="project reveal"><div><span class="tag">Lifecycle • Real work</span><h3>🎓 From Webinar → Enrollment</h3><p>A multi-channel nurture journey moving learners from registration to attendance to enrollment through timely Email, RCS, WhatsApp and IVR communication.</p></div><div><span class="pill">Email</span><span class="pill">RCS</span><span class="pill">WhatsApp</span><span class="pill">IVR</span></div></article>
+<article class="project reveal"><div><span class="tag">AI × Automation • Build</span><h3>🤖 From Trend → Content</h3><p>An AI-powered workflow that turns trending topics into platform-specific content: Instagram captions, LinkedIn posts, blog ideas, hashtags, reel concepts and image prompts.</p></div><div><span class="pill">Make.com</span><span class="pill">Gemini AI</span><span class="pill">Google Sheets</span></div></article>
+<article class="project reveal"><div><span class="tag">B2B Product Marketing • Strategic Work</span><h3>🔍 Making Complex Products Click</h3><p>Product-marketing work for an autonomous drone operations platform — translating technical capabilities into stakeholder-relevant business outcomes and clearer product communication.</p></div><div><a class="project-link" href="#drone-case">View project →</a><div><span class="pill">B2B</span><span class="pill">Product Marketing</span><span class="pill">Positioning</span></div></div></article>
+<article class="project reveal"><div><span class="tag">CRM Automation • Zoho Creator</span><h3>⚙️ Retail Loan Management System</h3><p>A multi-module loan management application built with Zoho Creator and Deluge, covering loan application, verification, sanction, disbursement and audit workflows with relational data models, forms, validations and reports.</p></div><div><span class="pill">Zoho Creator</span><span class="pill">Deluge</span><span class="pill">CRM Automation</span></div></article>
 </div></div></section>
 
-<section id="journey"><div class="wrap"><div class="journey"><div class="eyebrow" style="color:#aebdb6">Signature customer journey</div><h2>One customer.<br>Many touchpoints.</h2><p class="journey-intro">Good lifecycle marketing isn't “send more messages.” It's knowing what the customer needs next — and choosing the right channel, timing and message.</p>
-<div class="flow">
-<div class="step"><b>01 — SIGNAL</b><span>Customer registers or shows intent.</span></div>
-<div class="step"><b>02 — EMAIL</b><span>Set context, value and expectations.</span></div>
-<div class="step"><b>03 — WHATSAPP</b><span>Make the next action easy.</span></div>
-<div class="step"><b>04 — RCS</b><span>Use richer reminders and information.</span></div>
-<div class="step"><b>05 — IVR</b><span>Add a human nudge when needed.</span></div>
-<div class="step"><b>06 — CRM</b><span>Capture behaviour and trigger what comes next.</span></div>
-</div></div></div></section>
-
-<section id="capabilities"><div class="wrap"><div class="section-head"><h2>What I do</h2><p>Where strategy meets execution: journeys, messaging, data, automation and experimentation.</p></div>
-<div class="capabilities">
-<div class="cap"><h3>Lifecycle & CRM</h3><p>Customer journeys, segmentation, campaign calendars, retention and multi-channel communication.</p></div>
-<div class="cap"><h3>Marketing Automation</h3><p>Workflow design, triggers, lead routing, reusable systems and operational automation.</p></div>
-<div class="cap"><h3>Content & Messaging</h3><p>Email, WhatsApp, RCS, landing-page and campaign messaging designed around customer intent.</p></div>
-<div class="cap"><h3>Growth & Experimentation</h3><p>A/B testing, funnel thinking, lead generation and iterative campaign optimisation.</p></div>
-<div class="cap"><h3>Analytics</h3><p>Campaign reporting, behavioural signals and performance analysis to guide the next action.</p></div>
-<div class="cap"><h3>AI for Marketing</h3><p>Using AI to accelerate research, ideation and content operations without losing human judgement.</p></div>
+<section id="journey"><div class="wrap"><div class="journey-shell reveal">
+<div class="eyebrow">Signature customer journey</div><h2>One customer.<br>Many touchpoints.</h2><p class="journey-intro">The right lifecycle system responds to behaviour. A signal becomes a message, the message becomes an action, and the action becomes the next signal.</p>
+<div class="lifecycle"><div class="track"></div><div class="nodes">
+<div class="node"><div class="dot"></div><b>01 · SIGNAL</b><span>Intent or registration</span></div>
+<div class="node"><div class="dot"></div><b>02 · EMAIL</b><span>Context + value</span></div>
+<div class="node"><div class="dot"></div><b>03 · WHATSAPP</b><span>Easy next action</span></div>
+<div class="node"><div class="dot"></div><b>04 · RCS</b><span>Rich reminder</span></div>
+<div class="node"><div class="dot"></div><b>05 · IVR</b><span>Human nudge</span></div>
+<div class="node"><div class="dot"></div><b>06 · CRM</b><span>Learn + trigger</span></div>
+</div></div>
 </div></div></section>
 
-<section id="experiments"><div class="wrap"><div class="section-head"><h2>Experiments & building</h2><p>I like turning repetitive marketing work into systems that can be reused, measured and improved.</p></div>
-<div class="build">
-<div class="note"><h3>Trend → Content Engine</h3><p>Make.com orchestrates the workflow; Gemini transforms research into structured content outputs; Google Sheets becomes the working content layer.</p><p><strong>Output:</strong> Instagram captions, LinkedIn posts, blog ideas, hashtags, reel concepts and image prompts.</p></div>
-<div class="note"><h3>How I think</h3><p><strong>Signal → Hypothesis → Journey → Message → Distribution → Measurement.</strong></p><p>The goal isn't automation for its own sake. It's creating a system where the next marketing decision becomes easier.</p></div>
+<section id="experience"><div class="wrap">
+<div class="section-head reveal"><h2>Where I've worked</h2><p>Three environments that shaped how I think about CRM, acquisition, automation and customer communication.</p></div>
+<div class="experience">
+<article class="company reveal"><div class="num">01</div><h3>Great Learning</h3><p>Education • CRM & Lifecycle</p><div class="role">Assistant Manager – CRM · Mar 2025 – Apr 2026</div></article>
+<article class="company reveal"><div class="num">02</div><h3>Bidso</h3><p>B2B Commerce • Marketing</p><div class="role">Marketing Executive · Jun 2023 – Nov 2024</div></article>
+<article class="company reveal"><div class="num">03</div><h3>Awign</h3><p>Technology • Marketing Automation</p><div class="role">Marketing Automation Associate · Apr 2022 – Mar 2023</div></article>
 </div></div></section>
 
-<section id="about"><div class="wrap"><div class="section-head"><h2>Beyond the dashboard</h2><p>Marketing is part strategy, part curiosity. These are a few things that keep that curiosity alive.</p></div>
+<section id="skills"><div class="wrap">
+<div class="section-head reveal"><h2>Skills & toolkit</h2><p>A practical stack across CRM, lifecycle, automation, analytics, web, creative and AI.</p></div>
+<div class="tools">
+<div class="toolbox reveal"><h3>CRM & Marketing</h3><div class="tool-list">
+<span class="tool"><img src="https://cdn.simpleicons.org/webengage" onerror="this.style.display='none'"><span>WebEngage</span></span>
+<span class="tool"><span class="fallback">◉</span><span>CleverTap</span></span>
+<span class="tool"><img src="https://cdn.simpleicons.org/zoho" onerror="this.style.display='none'"><span>Zoho CRM</span></span>
+<span class="tool"><img src="https://cdn.simpleicons.org/hubspot" onerror="this.style.display='none'"><span>HubSpot</span></span>
+<span class="tool"><img src="https://cdn.simpleicons.org/salesforce" onerror="this.style.display='none'"><span>Salesforce</span></span>
+<span class="tool"><span class="fallback">M</span><span>Marketo</span></span>
+<span class="tool"><span class="fallback">✉</span><span>Email</span></span>
+<span class="tool"><span class="fallback">WA</span><span>WhatsApp</span></span>
+<span class="tool"><span class="fallback">R</span><span>RCS</span></span>
+</div></div>
+
+<div class="toolbox reveal"><h3>Automation</h3><div class="tool-list">
+<span class="tool"><img src="https://cdn.simpleicons.org/zapier" onerror="this.style.display='none'"><span>Zapier</span></span>
+<span class="tool"><img src="https://cdn.simpleicons.org/make" onerror="this.style.display='none'"><span>Make</span></span>
+<span class="tool"><span class="fallback">P</span><span>Pabbly Connect</span></span>
+<span class="tool"><span class="fallback">I</span><span>Integrately</span></span>
+<span class="tool"><span class="fallback">U</span><span>UChat</span></span>
+<span class="tool"><span class="fallback">E</span><span>Engati</span></span>
+<span class="tool"><span class="fallback">A</span><span>AiSensy</span></span>
+<span class="tool"><span class="fallback">⚙</span><span>Deluge</span></span>
+<span class="tool"><span class="fallback">IVR</span><span>IVR</span></span>
+</div></div>
+
+<div class="toolbox reveal"><h3>Analytics, Web & AI</h3><div class="tool-list">
+<span class="tool"><img src="https://cdn.simpleicons.org/tableau" onerror="this.style.display='none'"><span>Tableau</span></span>
+<span class="tool"><img src="https://cdn.simpleicons.org/googleanalytics" onerror="this.style.display='none'"><span>Google Analytics</span></span>
+<span class="tool"><img src="https://cdn.simpleicons.org/googlesearchconsole" onerror="this.style.display='none'"><span>Search Console</span></span>
+<span class="tool"><span class="fallback">S</span><span>SEMrush</span></span>
+<span class="tool"><span class="fallback">SQL</span><span>SQL</span></span>
+<span class="tool"><img src="https://cdn.simpleicons.org/powerbi" onerror="this.style.display='none'"><span>Power BI</span></span>
+<span class="tool"><img src="https://cdn.simpleicons.org/wordpress" onerror="this.style.display='none'"><span>WordPress</span></span>
+<span class="tool"><span class="fallback">C</span><span>Canva</span></span>
+<span class="tool"><span class="fallback">AI</span><span>ChatGPT</span></span>
+<span class="tool"><span class="fallback">AI</span><span>Claude</span></span>
+<span class="tool"><span class="fallback">G</span><span>Gemini AI</span></span>
+<span class="tool"><span class="fallback">N</span><span>NotebookLM</span></span>
+</div></div>
+</div></div></section>
+
+<section id="drone-case"><div class="wrap"><div class="case reveal"><div class="eyebrow">B2B Product Marketing</div><h2>Making Complex Products Click</h2><div class="case-grid"><div><p><strong>The challenge:</strong> powerful technology can still be difficult to evaluate when its capabilities aren't translated into the language of the people making business decisions.</p><p><strong>My direction:</strong> position an autonomous drone operations platform around stakeholder-specific business outcomes, making the value easier to understand, communicate and act on.</p></div><div><p><strong>Framework</strong></p><ul><li>Signal discovery</li><li>Critical questions</li><li>Hypothesis</li><li>Recommendation</li><li>Distribution / enablement</li><li>Assumptions</li></ul></div></div></div></div></section>
+
+<section id="education"><div class="wrap">
+<div class="section-head reveal"><h2>Education</h2><p>A business and economics foundation with a marketing-management focus.</p></div>
+<div class="education">
+<article class="edu reveal"><div class="year">Aug 2019 – Jun 2021</div><h3>Master of Business Administration</h3><p>Marketing Management</p><p><strong>Banaras Hindu University</strong></p></article>
+<article class="edu reveal"><div class="year">Aug 2016 – Jul 2019</div><h3>Bachelor of Arts (Hons.)</h3><p>Economics</p><p><strong>Banaras Hindu University</strong></p></article>
+</div></div></section>
+
+<section id="about"><div class="wrap">
+<div class="section-head reveal"><h2>Beyond the dashboard</h2><p>Marketing is part strategy, part curiosity. These are a few things that keep that curiosity alive.</p></div>
 <div class="personal">
-<article><div class="icon">🎨</div><h3>Designing</h3><p>Turning ideas into visual stories.</p></article>
-<article><div class="icon">📸</div><h3>Photography</h3><p>Capturing moments and stories through my lens.</p></article>
-<article><div class="icon">🎵</div><h3>Finding Good Music</h3><p>Always discovering new sounds and building playlists.</p></article>
-<article><div class="icon">✈️</div><h3>Exploring</h3><p>Travelling, discovering new places and learning continuously.</p></article>
+<article class="reveal"><div class="icon">🎨</div><h3>Designing</h3><p>Painting, graphic designing and turning ideas into visual stories.</p></article>
+<article class="reveal"><div class="icon">📸</div><h3>Photography</h3><p>Capturing moments, details and stories through my lens.</p></article>
+<article class="reveal"><div class="icon">🍳</div><h3>Cooking</h3><p>Experimenting with recipes and enjoying the process of making something from scratch.</p></article>
+<article class="reveal"><div class="icon">🎵</div><h3>Finding Good Music</h3><p>Always discovering new sounds and building playlists.</p></article>
 </div></div></section>
 
-<section id="contact" class="contact"><div class="wrap"><div class="contact-box"><div class="eyebrow">Let's connect</div><h2>Have a growth problem?<br>Let's make it a system.</h2><p>I'm interested in CRM, lifecycle, growth, marketing automation and AI-enabled marketing roles.</p><p>Replace the email and LinkedIn placeholders below with your live details before publishing.</p><p><a href="mailto:your-email@example.com">your-email@example.com</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></p></div></div></section>
+<section id="contact" class="contact"><div class="wrap"><div class="contact-box reveal">
+<div class="eyebrow">Let's connect</div><h2>Have a growth problem?<br>Let's make it a system.</h2>
+<p>I'm interested in CRM, lifecycle, growth, marketing automation and AI-enabled marketing roles.</p>
+<div class="contact-links"><a href="mailto:maithili.vishwakarma10@gmail.com">✉ maithili.vishwakarma10@gmail.com</a><a href="https://www.linkedin.com/in/maithili-vishwakarma-digital-marketer/" target="_blank" rel="noopener">in LinkedIn</a></div>
+</div></div></section>
 </main>
-<footer><div class="wrap">© 2026 Maithili · CRM • Lifecycle • Growth • Automation • AI</div></footer>
-</body></html>
+
+<footer><div class="wrap">© 2026 Maithili Vishwakarma · CRM • Lifecycle • Growth • Automation • AI</div></footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
